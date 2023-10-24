@@ -1,7 +1,7 @@
 let currentPageURL = window.location.href;
 let text;
 
-const manipulateDOM = () => {
+const manipulateDOM2 = () => {
   function checkURL(currentPageURL, text) {  
     currentPageURL = window.location.href;
     text = "404";
@@ -16,5 +16,5 @@ const manipulateDOM = () => {
 };
 
 window.addEventListener("DOMContentLoaded", () => {
-  manipulateDOM();
+  manipulateDOM2();
 });
