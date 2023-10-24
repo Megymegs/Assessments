@@ -4,21 +4,19 @@ document.addEventListener("DOMContentLoaded", function() {
       button.addEventListener("click", function() {
         if (this.getAttribute("aria-expanded")) {
           const currentTab = this.getAttribute("aria-controls");
-          console.log(currentTab);
-          const overlayImage = document.querySelector(".accordion-img img");
-          
+          const overlayImage = document.querySelector(".accordion-img img");          
           switch (currentTab) {
             case "collapseOne":
-              overlayImage.src = "/index.html/assets/backgrounds/Lender-Accordion-eVault.png";
+              overlayImage.src = "/Assessments/assets/backgrounds/Lender-Accordion-eVault.png";
               break;
             case "collapseTwo":
-              overlayImage.src = "/index.html/assets/backgrounds/Title-Escrow.png";
+              overlayImage.src = "/Assessments/assets/backgrounds/Title-Escrow.png";
               break;
             case "collapseThree":
-              overlayImage.src = "/index.html/assets/backgrounds/Scheduling.png";
+              overlayImage.src = "/Assessments/assets/backgrounds/Scheduling.png";
               break;
             case "collapseFour":
-              overlayImage.src = "/index.html/assets/backgrounds/Notary-signing-Agents.png";
+              overlayImage.src = "/Assessments/assets/backgrounds/Notary-signing-Agents.png";
               break;
             default:
               break;
