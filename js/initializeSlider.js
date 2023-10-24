@@ -13,6 +13,8 @@ const initializeSlider = () => {
     const screenWidth = window.innerWidth;
     if (screenWidth >= 1024) {
       return 4;
+    } else if (screenWidth >= 768) {
+      return 3;
     } else {
       return 2;
     }
