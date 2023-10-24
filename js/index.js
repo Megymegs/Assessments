@@ -15,4 +15,5 @@ document.addEventListener("DOMContentLoaded", function() {
       }, 6800);
     }
   }
+  checkURL();
 });
