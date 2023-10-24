@@ -1,0 +1,19 @@
+{
+  "name": "megan-me",
+  "version": "1.0.0",
+  "description": "Megan Meyer - Front-End Developer Assessment",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Megan Meyer",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.29.3",
+    "gulp": "^4.0.2"
+  },
+  "dependencies": {
+    "bootstrap": "^5.3.2",
+    "sass": "^1.69.4"
+  }
+}

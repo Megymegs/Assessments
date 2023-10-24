@@ -1,0 +1,78 @@
+@charset "UTF-8";
+:root {
+  --mm-light: rgb(242, 242, 242);
+  --mm-black: rgb(0, 0, 0);
+  --mm-overlay: rgba(0, 0, 0, 0.4);
+  --mm-lightgray: rgb(204, 204, 204);
+  --mm-darkgray: rgb(151, 151, 151);
+  --mm-maroon: rgb(72, 20, 44);
+  --mm-pink: rgb(215, 127, 161);
+  --mm-gradient-top: linear-gradient(to bottom, rgb(72, 20, 44), rgb(215, 127, 161));
+  --mm-gradient-bottom: linear-gradient(to bottom, rgb(215, 127, 161), rgb(72, 20, 44));
+  --mm-banner-background: url("../assets/backgrounds/monolith-hero-banner.png");
+  --mm-assessment1-font: "Nunito Sans", sans-serif;
+  --mm-assessment1-main-color: rgb(255, 255, 255);
+  --mm-assessment1-secondary-color: rgba(255,90,95,1.0);
+  --mm-site-width: calc(100% - 5vw);
+  --mm-assessment2-font1: "Roboto", sans-serif;
+  --mm-assessment2-font2: "Roboto", sans-serif;
+  --mm-assessment2-main-color: rgb(26, 37, 56);
+  --mm-assessment2-secondary-color: rgb(242, 107, 44);
+  --mm-site-width: calc(100% - 5vw);
+}
+
+.assessment_2 .main-holder {
+  padding: 0 9.5vw;
+  background-color: #f3f6fa;
+}
+.assessment_2 .main-holder .wrapper {
+  background-color: var(--mm-assessment1-main-color);
+  padding-bottom: 5rem;
+}
+.assessment_2 .main-holder .wrapper h1 {
+  padding-top: 5rem;
+  font-size: 33px;
+  font-family: var(--mm-assessment2-font1);
+  font-weight: 700;
+}
+.assessment_2 .main-holder .wrapper h1, .assessment_2 .main-holder .wrapper .accordion-button, .assessment_2 .main-holder .wrapper p {
+  color: var(--mm-assessment2-main-color);
+}
+.assessment_2 .main-holder .wrapper p {
+  font-family: var(--mm-assessment2-font2);
+  font-size: 16px;
+}
+.assessment_2 .main-holder .wrapper #snapdocsAccordion .accordion-item {
+  border: 0;
+  outline: none;
+}
+.assessment_2 .main-holder .wrapper #snapdocsAccordion .accordion-item .accordion-button {
+  box-shadow: none;
+  font-size: 21px;
+  background-color: transparent;
+  font-family: var(--mm-assessment2-font1);
+  font-weight: 700;
+  line-height: 70px;
+}
+.assessment_2 .main-holder .wrapper #snapdocsAccordion .accordion-item .accordion-button::after {
+  font-size: 16px;
+  color: var(--mm-assessment2-secondary-color);
+  background-image: none;
+  content: "";
+  font-family: "fontAwesome";
+  height: unset;
+}
+.assessment_2 .main-holder .wrapper #snapdocsAccordion .accordion-item .accordion-body .btn-group .btn {
+  font-family: var(--mm-assessment2-font2);
+}
+.assessment_2 .main-holder .wrapper #snapdocsAccordion .accordion-item .accordion-body .btn-group .btn svg {
+  margin-left: 5px;
+  height: 23px;
+  color: var(--mm-assessment2-secondary-color);
+}
+.assessment_2 .main-holder .wrapper #snapdocsAccordion .accordion-item .accordion-body .btn-group .btn:hover {
+  color: var(--mm-assessment2-secondary-color);
+}
+.assessment_2 .main-holder .wrapper #snapdocsAccordion .accordion-item:not(:first-of-type) {
+  border-top: 1px var(--mm-assessment2-main-color) solid;
+}

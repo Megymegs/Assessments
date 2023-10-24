@@ -1,0 +1,65 @@
+@import "variables";
+.assessment {
+    .wrapper {
+        h2 {
+            text-transform: capitalize;
+        }
+        .nav {
+            a {
+                color: var(--mm-black);
+                text-decoration: none;
+                svg {
+                    height: 18px;
+                    animation: ease-in-out infinite;
+                    animation-fill-mode: both;
+                    transform-origin: bottom center;
+                    -webkit-animation: ease-in-out infinite;
+                    -webkit-animation-fill-mode: both;
+                    -webkit-transform-origin: bottom center;
+                }
+                &:nth-of-type(1) {
+                    cursor: pointer;
+                    &:hover {
+                        svg {
+                            animation: pull ease-in-out infinite 1.2s;
+                            animation-fill-mode: both;
+                            transform-origin: bottom center;
+                            -webkit-animation: pull ease-in-out infinite 1.2s;
+                            -webkit-animation-fill-mode: both;
+                            -webkit-transform-origin: bottom center;
+                        }
+                    }
+                    svg {
+                        transform: skewX(0deg);
+                        -webkit-transform: skew(0deg);
+                    }
+                }
+                &:nth-of-type(3){
+                    position: relative;
+                    &:hover {
+                        svg {
+                            &.fa-house {
+                                animation-name: house;
+                                animation-duration: 8s;
+                                -webkit-animation-name: house;
+                                -webkit-animation-duration: 8s;
+                            }
+                            &.fa-door-open {
+                                animation-name: door;
+                                animation-delay: 0.2s;
+                                animation-duration: 8s;
+                                -webkit-animation-name: door;
+                                -webkit-animation-delay: 0.2s;
+                                -webkit-animation-duration: 8s;
+                            }
+                        }
+                    }
+                    svg.fa-door-open {
+                        opacity: 0;
+                        margin-left: -20px;
+                    }
+                }
+            }
+        }
+    }
+}

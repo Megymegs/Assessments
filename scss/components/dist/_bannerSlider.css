@@ -1,0 +1,29 @@
+:root {
+  --mm-light: rgb(242, 242, 242);
+  --mm-black: rgb(0, 0, 0);
+  --mm-lightgray: rgb(204, 204, 204);
+  --mm-darkgray: rgb(151, 151, 151);
+  --mm-maroon: rgb(72, 20, 44);
+  --mm-pink: rgb(215, 127, 161);
+  --mm-gradient-top: linear-gradient(to bottom, rgb(72, 20, 44), #D77FA1);
+  --mm-gradient-bottom: linear-gradient(to bottom, #D77FA1, #48142c);
+  --mm-banner-background: url("../assets/backgrounds/monolith-hero-banner.png");
+}
+
+.assessment .wrapper .main-holder {
+  background: var(--mm-banner-background);
+  background-size: cover;
+  background-position: center center;
+  position: relative;
+}
+.assessment .wrapper .main-holder ::after {
+  content: "";
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  background-color: var(--mm-black);
+  filter: opacity(0.2);
+  z-index: 0;
+}

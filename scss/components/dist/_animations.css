@@ -1,0 +1,153 @@
+:root {
+  --mm-light: rgb(242, 242, 242);
+  --mm-black: rgb(0, 0, 0);
+  --mm-overlay: rgba(0, 0, 0, 0.4);
+  --mm-lightgray: rgb(204, 204, 204);
+  --mm-darkgray: rgb(151, 151, 151);
+  --mm-maroon: rgb(72, 20, 44);
+  --mm-pink: rgb(215, 127, 161);
+  --mm-gradient-top: linear-gradient(to bottom, rgb(72, 20, 44), rgb(215, 127, 161));
+  --mm-gradient-bottom: linear-gradient(to bottom, rgb(215, 127, 161), rgb(72, 20, 44));
+  --mm-banner-background: url("../assets/backgrounds/monolith-hero-banner.png");
+  --mm-assessment1-fonts: "Nunito Sans";
+  --mm-assessment1-main-color: rgb(255, 255, 255);
+  --mm-assessment1-secondary-color: rgba(255,90,95,1.0);
+  --mm-site-width: calc(100% - 5vw);
+}
+
+@-webkit-keyframes broke {
+  10% {
+    -webkit-transform: rotate(0);
+  }
+  20%, 60% {
+    -webkit-transform: rotate(-80deg);
+  }
+  40% {
+    -webkit-transform: rotate(-60deg);
+  }
+  80% {
+    -webkit-transform: rotate(-60deg) translateY(0);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: translateY(700px);
+    opacity: 0;
+  }
+}
+@keyframes broke {
+  10% {
+    transform: rotate(0);
+  }
+  20%, 60% {
+    transform: rotate(-80deg);
+  }
+  40% {
+    transform: rotate(-60deg);
+  }
+  80% {
+    transform: rotate(-60deg) translateY(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(400px);
+    opacity: 0;
+  }
+}
+@-webkit-keyframes ouch {
+  0% {
+    margin-bottom: 0;
+    filter: drop-shadow(0 0 var(--mm-black));
+  }
+  25%, 90% {
+    top: 20px;
+    filter: dropShadow(0 18px var(--mm-black));
+  }
+  100% {
+    top: 0;
+    margin-bottom: 0;
+    filter: drop-shadow(0 0 var(--mm-black));
+  }
+}
+@keyframes ouch {
+  0% {
+    margin-bottom: 0;
+    filter: drop-shadow(0 0 var(--mm-black));
+  }
+  25%, 90% {
+    top: 20px;
+    filter: dropShadow(0 18px var(--mm-black));
+  }
+  100% {
+    top: 0;
+    margin-bottom: 0;
+    filter: drop-shadow(0 0 var(--mm-black));
+  }
+}
+@-webkit-keyframes pull {
+  0%, 50%, 100% {
+    -webkit-transform: skewX(0deg);
+  }
+  25%, 75% {
+    -webkit-transform: skewX(5deg);
+  }
+}
+@keyframes pull {
+  0%, 50%, 100% {
+    transform: skewX(0deg);
+  }
+  25%, 75% {
+    transform: skewX(5deg);
+  }
+}
+@-webkit-keyframes house {
+  0%, 100% {
+    -webkit-transform: scale(1);
+    opacity: 1;
+  }
+  40% {
+    opacity: 0;
+  }
+  50% {
+    -webkit-transform: scale(0);
+    opacity: 0;
+  }
+  92% {
+    opacity: 1;
+  }
+}
+@keyframes house {
+  0%, 100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  40% {
+    opacity: 0;
+  }
+  50% {
+    transform: scale(0);
+    opacity: 0;
+  }
+  92% {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes door {
+  0%, 98%, 100% {
+    -webkit-transform: scale(0);
+    opacity: 0;
+  }
+  50% {
+    -webkit-transform: scale(1);
+    opacity: 1;
+  }
+}
+@keyframes door {
+  0%, 98%, 100% {
+    transform: scale(0);
+    opacity: 0;
+  }
+  50% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}

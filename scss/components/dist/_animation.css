@@ -1,0 +1,38 @@
+@-webkit-keyframes broke {
+  10% {
+    -webkit-transform: rotate(0);
+  }
+  20%, 60% {
+    -webkit-transform: rotate(-80deg);
+  }
+  40% {
+    -webkit-transform: rotate(-60deg);
+  }
+  80% {
+    -webkit-transform: rotate(-60deg) translateY(0);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: translateY(700px);
+    opacity: 0;
+  }
+}
+@keyframes broke {
+  10% {
+    transform: rotate(0);
+  }
+  20%, 60% {
+    transform: rotate(-80deg);
+  }
+  40% {
+    transform: rotate(-60deg);
+  }
+  80% {
+    transform: rotate(-60deg) translateY(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(700px);
+    opacity: 0;
+  }
+}

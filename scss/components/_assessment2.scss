@@ -1,0 +1,64 @@
+@import "variables";
+.assessment_2 {
+    .main-holder {
+        padding: 0 9.5vw;
+        background-color: rgb(243, 246, 250);
+        .wrapper {
+            background-color: var(--mm-assessment1-main-color);
+            padding-bottom: 5rem;
+            h1 {
+                padding-top: 5rem;
+                font-size: 33px;
+                font-family: var(--mm-assessment2-font1);
+                font-weight: 700;
+            }
+            h1, .accordion-button, p {
+                color: var(--mm-assessment2-main-color);
+            }
+            p {
+                font-family: var(--mm-assessment2-font2);
+                font-size: 16px;
+            }
+            #snapdocsAccordion {
+                .accordion-item {
+                    border: 0;
+                    outline: none;
+                    .accordion-button {
+                        box-shadow: none;
+                        font-size: 21px;
+                        background-color: transparent;
+                        font-family: var(--mm-assessment2-font1);
+                        font-weight: 700;
+                        line-height: 70px;
+                        &::after {
+                            font-size: 16px;
+                            color: var(--mm-assessment2-secondary-color); 
+                            background-image: none;
+                            content: "\f107";
+                            font-family: 'fontAwesome';
+                            height: unset;
+                        }
+                    }
+                    .accordion-body {
+                        .btn-group {
+                            .btn {
+                                font-family: var(--mm-assessment2-font2);
+                                svg {
+                                    margin-left: 5px;
+                                    height: 23px;
+                                    color: var(--mm-assessment2-secondary-color); 
+                                }
+                                &:hover {
+                                    color: var(--mm-assessment2-secondary-color); 
+                                }
+                            }
+                        }
+                    }
+                    &:not(:first-of-type) {
+                        border-top: 1px var(--mm-assessment2-main-color) solid;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,19 @@
+:root {
+  --mm-black: var(--mm-black);
+  --mm-lightgray: #ccc;
+  --mm-darkgray: #979797;
+  --mm-maroon: #48142c;
+  --mm-pink: #D77FA1;
+  --mm-gradient-top: linear-gradient(to bottom, #48142c, #D77FA1);
+  --mm-gradient-bottom: linear-gradient(to bottom, #D77FA1, #48142c);
+}
+
+.assessment-link {
+  text-transform: capitalize;
+  font-weight: 500;
+  color: var(--mm-black);
+}
+.assessment-link a {
+  color: var(--mm-black);
+  font-weight: normal;
+}

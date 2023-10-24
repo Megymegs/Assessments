@@ -1,0 +1,24 @@
+<footer class="site-footer navbar-dark">
+  <div class="container-fluid wrapper">
+    <data class="u-url text-center d-block pb-4" href="{{site.baseurl | relative_url}}">{{ site.title | escape }}</data>
+    <div class="footer-col-wrapper d-flex flex-wrap">
+      <div class="footer-col col-md-6 col-12">
+        <ul class="pl-0 list-unstyled text-center text-md-start">
+          <li class="mb-2"><a href="https://github.com/Megymegs" target="_blank"><i class="fa-brands fa-github"></i>{{ site.github_username | escape }}</a></li>
+          <li class="mb-2"><a href="mailto:{{ site.email | escape }}?subject=Email created from assessment submission"><i class="fa-solid fa-envelope"></i>{{ site.email | escape }}</a></li>
+        </ul>
+      </div>
+      <div class="footer-col text-center text-md-end col-md-6 col-12">
+        <p class="mb-2"><i class="fa-solid fa-user-check"></i>{{ site.title | escape }}</p>
+        <p class="mb-2 ms-4">
+          {% if page.url != "/index.html" %}
+            {{ page.title | escape }}
+          {% endif %}
+        </p>
+      </div>
+      <div class="footer-col w-100">
+        <small class="text-center d-block"><i class="fa-regular fa-calendar-check"></i>This assessment was completed at {{ "now" | date: "%Y-%m-%d %H:%M" | escape }}</small>
+      </div>
+    </div>
+  </div>
+</footer>

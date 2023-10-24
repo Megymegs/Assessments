@@ -1,0 +1,69 @@
+:root {
+  --mm-light: rgb(242, 242, 242);
+  --mm-black: rgb(0, 0, 0);
+  --mm-overlay: rgba(0, 0, 0, 0.4);
+  --mm-lightgray: rgb(204, 204, 204);
+  --mm-darkgray: rgb(151, 151, 151);
+  --mm-maroon: rgb(72, 20, 44);
+  --mm-pink: rgb(215, 127, 161);
+  --mm-gradient-top: linear-gradient(to bottom, rgb(72, 20, 44), rgb(215, 127, 161));
+  --mm-gradient-bottom: linear-gradient(to bottom, rgb(215, 127, 161), rgb(72, 20, 44));
+  --mm-banner-background: url("../assets/backgrounds/monolith-hero-banner.png");
+  --mm-assessment1-fonts: "Nunito Sans";
+  --mm-assessment1-main-color: rgb(255, 255, 255);
+  --mm-assessment1-secondary-color: rgba(255,90,95,1.0);
+  --mm-site-width: calc(100% - 5vw);
+}
+
+.assessment .wrapper h2 {
+  text-transform: capitalize;
+}
+.assessment .wrapper .nav a {
+  color: var(--mm-black);
+  text-decoration: none;
+}
+.assessment .wrapper .nav a svg {
+  height: 18px;
+  animation: ease-in-out infinite;
+  animation-fill-mode: both;
+  transform-origin: bottom center;
+  -webkit-animation: ease-in-out infinite;
+  -webkit-animation-fill-mode: both;
+  -webkit-transform-origin: bottom center;
+}
+.assessment .wrapper .nav a:nth-of-type(1) {
+  cursor: pointer;
+}
+.assessment .wrapper .nav a:nth-of-type(1):hover svg {
+  animation: pull ease-in-out infinite 1.2s;
+  animation-fill-mode: both;
+  transform-origin: bottom center;
+  -webkit-animation: pull ease-in-out infinite 1.2s;
+  -webkit-animation-fill-mode: both;
+  -webkit-transform-origin: bottom center;
+}
+.assessment .wrapper .nav a:nth-of-type(1) svg {
+  transform: skewX(0deg);
+  -webkit-transform: skew(0deg);
+}
+.assessment .wrapper .nav a:nth-of-type(3) {
+  position: relative;
+}
+.assessment .wrapper .nav a:nth-of-type(3):hover svg.fa-house {
+  animation-name: house;
+  animation-duration: 8s;
+  -webkit-animation-name: house;
+  -webkit-animation-duration: 8s;
+}
+.assessment .wrapper .nav a:nth-of-type(3):hover svg.fa-door-open {
+  animation-name: door;
+  animation-delay: 0.2s;
+  animation-duration: 8s;
+  -webkit-animation-name: door;
+  -webkit-animation-delay: 0.2s;
+  -webkit-animation-duration: 8s;
+}
+.assessment .wrapper .nav a:nth-of-type(3) svg.fa-door-open {
+  opacity: 0;
+  margin-left: -20px;
+}

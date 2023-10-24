@@ -1,0 +1,56 @@
+@import "animations";
+
+.container {
+    margin: 10px auto;
+    max-width: 600px;
+    text-align: center;
+    h1 {
+        margin: 30px 0;
+        font-size: 4em;
+        line-height: 1;
+        letter-spacing: -1px;
+        span {
+            position: relative;
+            display: inline-block;
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            &::before, ::after {
+                content: "";
+                position: absolute;
+            }
+            &#left{
+                left: 17.5px;
+                background-image: -webkit-linear-gradient(0deg, var(--mm-black) 3%, var(--mm-black) 76%, transparent 76%);
+                -webkit-animation: broke ease-in-out infinite 6s;
+                animation: broke ease-in-out infinite 6s;
+                animation-delay: 1.5s;
+                animation-fill-mode: both;
+                -webkit-animation-delay: 1.5s;
+                -webkit-animation-fill-mode: both;
+                -webkit-transform-origin: bottom right;
+                transform-origin: bottom right;
+                z-index: -1;
+            }
+            &#right{
+                left: -17.5px;
+                background-image: -webkit-linear-gradient(0deg, transparent 26%, var(--mm-black) 26%, var(--mm-black) 80%);
+            }
+        }
+    }
+    h3 {
+        font-size: 32px;
+    }
+    h3, > p {
+        filter: drop-shadow(0 0 var(--mm-black));
+        position: relative;
+        animation: ouch ease-in-out infinite 6s;
+        animation-delay: 1.795s;
+        animation-fill-mode: both;
+        transform-origin: top center;
+        -webkit-animation: ouch ease-in-out infinite 6s;
+        -webkit-animation-delay: 1.795s;
+        -webkit-animation-fill-mode: both;
+        -webkit-transform-origin: top center;
+    }
+}

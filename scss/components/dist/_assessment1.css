@@ -1,0 +1,194 @@
+:root {
+  --mm-light: rgb(242, 242, 242);
+  --mm-black: rgb(0, 0, 0);
+  --mm-overlay: rgba(0, 0, 0, 0.4);
+  --mm-lightgray: rgb(204, 204, 204);
+  --mm-darkgray: rgb(151, 151, 151);
+  --mm-maroon: rgb(72, 20, 44);
+  --mm-pink: rgb(215, 127, 161);
+  --mm-gradient-top: linear-gradient(to bottom, rgb(72, 20, 44), rgb(215, 127, 161));
+  --mm-gradient-bottom: linear-gradient(to bottom, rgb(215, 127, 161), rgb(72, 20, 44));
+  --mm-banner-background: url("../assets/backgrounds/monolith-hero-banner.png");
+  --mm-assessment1-font: "Nunito Sans", sans-serif;
+  --mm-assessment1-main-color: rgb(255, 255, 255);
+  --mm-assessment1-secondary-color: rgba(255,90,95,1.0);
+  --mm-site-width: calc(100% - 5vw);
+  --mm-assessment2-font1: "Roboto", sans-serif;
+  --mm-assessment2-font2: "Roboto", sans-serif;
+  --mm-assessment2-main-color: rgb(26, 37, 56);
+  --mm-assessment2-secondary-color: rgb(242, 107, 44);
+  --mm-site-width: calc(100% - 5vw);
+}
+
+.assessment_1 .main-holder {
+  position: relative;
+  padding: 5rem 9.5vw;
+}
+.assessment_1 .main-holder::before {
+  content: "";
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  background: var(--mm-banner-background);
+  background-size: cover;
+  background-position: center center;
+  filter: brightness(0.4);
+  z-index: -1;
+}
+.assessment_1 .main-holder .text-holder {
+  max-width: 550px;
+  font-family: var(--mm-assessment1-font);
+  z-index: 2;
+}
+.assessment_1 .main-holder .text-holder h1, .assessment_1 .main-holder .text-holder p {
+  color: var(--mm-assessment1-main-color);
+  font-weight: 400;
+}
+.assessment_1 .main-holder .text-holder h1 {
+  font-size: 54px;
+  letter-spacing: -0.25px;
+}
+.assessment_1 .main-holder .text-holder p, .assessment_1 .main-holder .text-holder button {
+  font-size: 16px;
+}
+.assessment_1 .main-holder .text-holder h6 {
+  color: var(--mm-assessment1-secondary-color);
+  font-weight: 700;
+}
+.assessment_1 .main-holder .text-holder h6 {
+  font-size: 18px;
+}
+.assessment_1 .main-holder .text-holder .btn-group .btn {
+  border-color: var(--mm-assessment1-secondary-color);
+  color: var(--mm-assessment1-main-color);
+  border-radius: 25px;
+  font-weight: 700;
+  min-width: 180px;
+  line-height: 50px;
+  margin: 10px 25px 30px 0;
+  padding: 0 15px;
+  max-width: 250px;
+}
+.assessment_1 .main-holder .text-holder .btn-group .btn:nth-of-type(1) {
+  background-color: var(--mm-assessment1-secondary-color);
+  color: var(--mm-assessment1-main-color);
+}
+.assessment_1 .main-holder .text-holder .btn-group .btn:nth-of-type(1):hover {
+  background-color: #cc4d59;
+  border-color: #cc4d59;
+}
+.assessment_1 .main-holder .text-holder .btn-group .btn:nth-of-type(2) {
+  border-color: var(--mm-assessment1-secondary-color);
+  background-color: transparent;
+  margin-right: 0;
+}
+.assessment_1 .main-holder .text-holder .btn-group .btn:nth-of-type(2):hover {
+  background-color: var(--mm-assessment1-secondary-color);
+}
+@media screen and (min-width: 992px) {
+  .assessment_1 .main-holder .text-holder .btn-group .btn {
+    margin: 2vw 25px 5vw 0;
+  }
+}
+@media screen and (min-width: 992px) {
+  .assessment_1 .main-holder .text-holder {
+    max-width: 600px;
+  }
+}
+.assessment_1 .main-holder .logo-slider {
+  position: relative;
+  overflow: hidden;
+  height: 100px;
+  max-width: 100%;
+}
+.assessment_1 .main-holder .logo-slider .slider-holder {
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  border-radius: 0;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+  padding: 0 !important;
+  justify-content: flex-start;
+}
+.assessment_1 .main-holder .logo-slider .slider-holder.swiper {
+  width: 100% !important;
+}
+.assessment_1 .main-holder .logo-slider .slider-holder::-webkit-scrollbar {
+  display: none !important;
+}
+.assessment_1 .main-holder .logo-slider .slider-holder.no-transition {
+  scroll-behavior: auto !important;
+}
+.assessment_1 .main-holder .logo-slider .slider-holder.dragging {
+  scroll-snap-type: none !important;
+  scroll-behavior: auto !important;
+}
+.assessment_1 .main-holder .logo-slider .slider-holder.dragging .slide {
+  cursor: grab !important;
+  user-select: none !important;
+}
+.assessment_1 .main-holder .logo-slider .slider-holder:where(.slide) {
+  display: flex !important;
+  justify-content: start !important;
+  align-items: center !important;
+}
+.assessment_1 .main-holder .logo-slider .slider-holder .slide {
+  display: flex !important;
+  flex-direction: column;
+  flex: 0 0 50%;
+}
+.assessment_1 .main-holder .logo-slider .slider-holder .slide img {
+  max-width: 65%;
+  height: auto;
+}
+@media screen and (min-width: 992px) {
+  .assessment_1 .main-holder .logo-slider .slider-holder .slide {
+    flex: 0 0 calc(100% / 5);
+  }
+}
+.assessment_1 .main-holder .logo-slider .arrow-holder {
+  position: absolute;
+  top: 35%;
+  left: 5px;
+  right: 5px;
+  transform: translateY(-50%);
+}
+.assessment_1 .main-holder .logo-slider .arrow-holder .arrow {
+  font-size: 10px;
+  line-height: 18px;
+  border-radius: 50%;
+  border: 1px solid;
+  color: var(--mm-assessment1-secondary-color);
+  cursor: pointer;
+  width: 20px;
+  text-align: center;
+}
+.assessment_1 .main-holder .logo-slider .dot-holder {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.assessment_1 .main-holder .logo-slider .dot-holder .dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: var(--mm-assessment1-secondary-color);
+  margin: 0 4px;
+  cursor: pointer;
+}
+.assessment_1 .main-holder .logo-slider .dot-holder .dot:not(.active) {
+  filter: brightness(0.4);
+}
+@media screen and (min-width: 992px) {
+  .assessment_1 .main-holder .logo-slider {
+    max-width: 1000px;
+  }
+}
+@media screen and (min-width: 992px) {
+  .assessment_1 .main-holder {
+    padding: 5rem 5vw;
+  }
+}

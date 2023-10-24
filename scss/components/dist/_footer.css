@@ -1,0 +1,42 @@
+:root {
+  --mm-light: rgb(242, 242, 242);
+  --mm-black: rgb(0, 0, 0);
+  --mm-overlay: rgba(0, 0, 0, 0.4);
+  --mm-lightgray: rgb(204, 204, 204);
+  --mm-darkgray: rgb(151, 151, 151);
+  --mm-maroon: rgb(72, 20, 44);
+  --mm-pink: rgb(215, 127, 161);
+  --mm-gradient-top: linear-gradient(to bottom, rgb(72, 20, 44), rgb(215, 127, 161));
+  --mm-gradient-bottom: linear-gradient(to bottom, rgb(215, 127, 161), rgb(72, 20, 44));
+  --mm-banner-background: url("../assets/backgrounds/monolith-hero-banner.png");
+  --mm-assessment1-fonts: "Nunito Sans";
+  --mm-assessment1-main-color: rgb(255, 255, 255);
+  --mm-assessment1-secondary-color: rgba(255,90,95,1.0);
+  --mm-site-width: calc(100% - 5vw);
+}
+
+.site-footer {
+  padding: 30px 0;
+  background-image: var(--mm-gradient-bottom);
+  filter: drop-shadow(0 0 5px var(--mm-lightgray));
+}
+.site-footer .container-fluid > a, .site-footer .container-fluid .u-url {
+  font-size: 21px;
+  color: var(--mm-light);
+  filter: drop-shadow(0 0 2.5px var(--mm-black));
+}
+.site-footer .container-fluid .footer-col a {
+  color: var(--mm-light);
+  filter: drop-shadow(0 0 2.5px var(--mm-black));
+}
+.site-footer .container-fluid .footer-col svg {
+  margin-right: 5px;
+  height: 18px;
+}
+.site-footer .container-fluid .footer-col p, .site-footer .container-fluid .footer-col small {
+  color: var(--mm-light);
+  filter: drop-shadow(0 0 2.5px var(--mm-black));
+}
+.site-footer .container-fluid .footer-col:nth-of-type(2) .ms-4 {
+  text-transform: capitalize;
+}

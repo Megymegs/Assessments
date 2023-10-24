@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+  {%- include head.html -%}
+  <body>
+    {%- include header.html -%}
+    <main class="page-content {{page.layout}} {{page.class}} py-5" aria-label="Content">
+      <div class="container-fluid wrapper">
+        <h2 class="pb-4">{{ page.description }}</h2>
+      </div>
+      {{ content }}
+      <div class="container-fluid wrapper">
+        <div class="nav flex-md-row flex-column justify-content-between pt-4">
+          <a onclick="history.back()" class="mb-2 mb-md-0"><i class="fa-solid fa-people-pulling"></i> Previous Page</a> 
+          {% if page.title == "assessment 1" %}
+          <a href="{{site.baseurl}}assessment_2/" class="{{page.title}} mb-2 mb-md-0"><i class="fas fa-forward"></i> Next Assessment</a>
+          {% else %}
+          <a href="{{site.baseurl}}assessment_1/" class="{{page.title}} mb-2 mb-md-0"><i class="fas fa-backward"></i> Previous Assessment</a>
+          {% endif %}
+          <a href="{{site.baseurl}}"><i class="fa-solid fa-house"></i><i class="fa-solid fa-door-open"></i> Return Home</a>
+        </div>
+      </div>
+    </main>
+    {%- include footer.html -%}
+  </body>
+</html>

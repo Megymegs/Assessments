@@ -1,0 +1,32 @@
+@import "variables";
+.site-footer {
+    padding: 30px 0;
+    background-image: var(--mm-gradient-bottom);
+    filter: drop-shadow(0 0 5px var(--mm-lightgray));
+    .container-fluid {
+        > a, .u-url {
+            font-size: 21px;
+            color: var(--mm-light);
+            filter: drop-shadow(0 0 2.5px var(--mm-black));
+        }
+        .footer-col {
+            a {
+                color: var(--mm-light);
+                filter: drop-shadow(0 0 2.5px var(--mm-black));
+            }
+            svg {
+                margin-right: 5px;
+                height: 18px;
+            }
+            p, small {
+                color: var(--mm-light);
+                filter: drop-shadow(0 0 2.5px var(--mm-black));                
+            }
+            &:nth-of-type(2) {
+                .ms-4 {
+                    text-transform: capitalize;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,23 @@
+title: Megan Meyer - Front-End Developer Assessment
+email: megymegs@gmail.com
+author: Megan Meyer
+description: >- 
+  Front-End Developer Assessment | Monolith hero banner with logo slider and Snapdocs accordion
+baseurl: "/index.html/" 
+url: ""
+github_username:  Megymegs
+
+# Build settings
+plugins:
+  - jekyll-feed
+exclude:
+  - .sass-cache/
+  - .jekyll-cache/
+  - gemfiles/
+  - Gemfile
+  - Gemfile.lock
+  - node_modules/
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/

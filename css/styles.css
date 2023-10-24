@@ -1,0 +1,712 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,400;6..12,500;6..12,700&family=Open+Sans&family=Roboto:wght@400;700&display=swap");
+:root {
+  --mm-light: rgb(242, 242, 242);
+  --mm-black: rgb(0, 0, 0);
+  --mm-overlay: rgba(0, 0, 0, 0.4);
+  --mm-lightgray: rgb(204, 204, 204);
+  --mm-darkgray: rgb(151, 151, 151);
+  --mm-maroon: rgb(72, 20, 44);
+  --mm-pink: rgb(215, 127, 161);
+  --mm-gradient-top: linear-gradient(to bottom, rgb(72, 20, 44), rgb(215, 127, 161));
+  --mm-gradient-bottom: linear-gradient(to bottom, rgb(215, 127, 161), rgb(72, 20, 44));
+  --mm-banner-background: url("../assets/backgrounds/monolith-hero-banner.png");
+  --mm-assessment1-font: "Nunito Sans", sans-serif;
+  --mm-assessment1-main-color: rgb(255, 255, 255);
+  --mm-assessment1-secondary-color: rgba(255,90,95,1.0);
+  --mm-site-width: calc(100% - 5vw);
+  --mm-assessment2-font1: "Roboto", sans-serif;
+  --mm-assessment2-font2: "Roboto", sans-serif;
+  --mm-assessment2-main-color: rgb(26, 37, 56);
+  --mm-assessment2-secondary-color: rgb(242, 107, 44);
+  --mm-site-width: calc(100% - 5vw);
+}
+
+.wrapper {
+  max-width: var(--mm-site-width);
+}
+
+:root {
+  --mm-light: rgb(242, 242, 242);
+  --mm-black: rgb(0, 0, 0);
+  --mm-overlay: rgba(0, 0, 0, 0.4);
+  --mm-lightgray: rgb(204, 204, 204);
+  --mm-darkgray: rgb(151, 151, 151);
+  --mm-maroon: rgb(72, 20, 44);
+  --mm-pink: rgb(215, 127, 161);
+  --mm-gradient-top: linear-gradient(to bottom, rgb(72, 20, 44), rgb(215, 127, 161));
+  --mm-gradient-bottom: linear-gradient(to bottom, rgb(215, 127, 161), rgb(72, 20, 44));
+  --mm-banner-background: url("../assets/backgrounds/monolith-hero-banner.png");
+  --mm-assessment1-font: "Nunito Sans", sans-serif;
+  --mm-assessment1-main-color: rgb(255, 255, 255);
+  --mm-assessment1-secondary-color: rgba(255,90,95,1.0);
+  --mm-site-width: calc(100% - 5vw);
+  --mm-assessment2-font1: "Roboto", sans-serif;
+  --mm-assessment2-font2: "Roboto", sans-serif;
+  --mm-assessment2-main-color: rgb(26, 37, 56);
+  --mm-assessment2-secondary-color: rgb(242, 107, 44);
+  --mm-site-width: calc(100% - 5vw);
+}
+
+.navbar {
+  padding: 30px 0;
+  background-image: var(--mm-gradient-top);
+  filter: drop-shadow(0 0 5px var(--mm-lightgray));
+}
+.navbar .container-fluid {
+  align-items: baseline;
+}
+.navbar .container-fluid .site-title {
+  font-size: 1.75rem;
+  max-width: calc(100% - 70px);
+  margin-left: 10px;
+  color: var(--mm-light);
+  filter: drop-shadow(0 0 2.5px var(--mm-black));
+}
+.navbar .container-fluid #navbarScroll .navbar-nav .site-link {
+  color: var(--mm-light);
+  margin: 0 10px;
+  text-transform: capitalize;
+}
+
+:root {
+  --mm-light: rgb(242, 242, 242);
+  --mm-black: rgb(0, 0, 0);
+  --mm-overlay: rgba(0, 0, 0, 0.4);
+  --mm-lightgray: rgb(204, 204, 204);
+  --mm-darkgray: rgb(151, 151, 151);
+  --mm-maroon: rgb(72, 20, 44);
+  --mm-pink: rgb(215, 127, 161);
+  --mm-gradient-top: linear-gradient(to bottom, rgb(72, 20, 44), rgb(215, 127, 161));
+  --mm-gradient-bottom: linear-gradient(to bottom, rgb(215, 127, 161), rgb(72, 20, 44));
+  --mm-banner-background: url("../assets/backgrounds/monolith-hero-banner.png");
+  --mm-assessment1-font: "Nunito Sans", sans-serif;
+  --mm-assessment1-main-color: rgb(255, 255, 255);
+  --mm-assessment1-secondary-color: rgba(255,90,95,1.0);
+  --mm-site-width: calc(100% - 5vw);
+  --mm-assessment2-font1: "Roboto", sans-serif;
+  --mm-assessment2-font2: "Roboto", sans-serif;
+  --mm-assessment2-main-color: rgb(26, 37, 56);
+  --mm-assessment2-secondary-color: rgb(242, 107, 44);
+  --mm-site-width: calc(100% - 5vw);
+}
+
+.assessment-link {
+  text-transform: capitalize;
+  font-weight: 500;
+  color: var(--mm-black);
+}
+.assessment-link a {
+  color: var(--mm-black);
+  font-weight: normal;
+}
+
+:root {
+  --mm-light: rgb(242, 242, 242);
+  --mm-black: rgb(0, 0, 0);
+  --mm-overlay: rgba(0, 0, 0, 0.4);
+  --mm-lightgray: rgb(204, 204, 204);
+  --mm-darkgray: rgb(151, 151, 151);
+  --mm-maroon: rgb(72, 20, 44);
+  --mm-pink: rgb(215, 127, 161);
+  --mm-gradient-top: linear-gradient(to bottom, rgb(72, 20, 44), rgb(215, 127, 161));
+  --mm-gradient-bottom: linear-gradient(to bottom, rgb(215, 127, 161), rgb(72, 20, 44));
+  --mm-banner-background: url("../assets/backgrounds/monolith-hero-banner.png");
+  --mm-assessment1-font: "Nunito Sans", sans-serif;
+  --mm-assessment1-main-color: rgb(255, 255, 255);
+  --mm-assessment1-secondary-color: rgba(255,90,95,1.0);
+  --mm-site-width: calc(100% - 5vw);
+  --mm-assessment2-font1: "Roboto", sans-serif;
+  --mm-assessment2-font2: "Roboto", sans-serif;
+  --mm-assessment2-main-color: rgb(26, 37, 56);
+  --mm-assessment2-secondary-color: rgb(242, 107, 44);
+  --mm-site-width: calc(100% - 5vw);
+}
+
+.assessment .wrapper h2 {
+  text-transform: capitalize;
+}
+.assessment .wrapper .nav a {
+  color: var(--mm-black);
+  text-decoration: none;
+}
+.assessment .wrapper .nav a svg {
+  height: 18px;
+  animation: ease-in-out infinite;
+  animation-fill-mode: both;
+  transform-origin: bottom center;
+  -webkit-animation: ease-in-out infinite;
+  -webkit-animation-fill-mode: both;
+  -webkit-transform-origin: bottom center;
+}
+.assessment .wrapper .nav a:nth-of-type(1) {
+  cursor: pointer;
+}
+.assessment .wrapper .nav a:nth-of-type(1):hover svg {
+  animation: pull ease-in-out infinite 1.2s;
+  animation-fill-mode: both;
+  transform-origin: bottom center;
+  -webkit-animation: pull ease-in-out infinite 1.2s;
+  -webkit-animation-fill-mode: both;
+  -webkit-transform-origin: bottom center;
+}
+.assessment .wrapper .nav a:nth-of-type(1) svg {
+  transform: skewX(0deg);
+  -webkit-transform: skew(0deg);
+}
+.assessment .wrapper .nav a:nth-of-type(3) {
+  position: relative;
+}
+.assessment .wrapper .nav a:nth-of-type(3):hover svg.fa-house {
+  animation-name: house;
+  animation-duration: 8s;
+  -webkit-animation-name: house;
+  -webkit-animation-duration: 8s;
+}
+.assessment .wrapper .nav a:nth-of-type(3):hover svg.fa-door-open {
+  animation-name: door;
+  animation-delay: 0.2s;
+  animation-duration: 8s;
+  -webkit-animation-name: door;
+  -webkit-animation-delay: 0.2s;
+  -webkit-animation-duration: 8s;
+}
+.assessment .wrapper .nav a:nth-of-type(3) svg.fa-door-open {
+  opacity: 0;
+  margin-left: -20px;
+}
+
+:root {
+  --mm-light: rgb(242, 242, 242);
+  --mm-black: rgb(0, 0, 0);
+  --mm-overlay: rgba(0, 0, 0, 0.4);
+  --mm-lightgray: rgb(204, 204, 204);
+  --mm-darkgray: rgb(151, 151, 151);
+  --mm-maroon: rgb(72, 20, 44);
+  --mm-pink: rgb(215, 127, 161);
+  --mm-gradient-top: linear-gradient(to bottom, rgb(72, 20, 44), rgb(215, 127, 161));
+  --mm-gradient-bottom: linear-gradient(to bottom, rgb(215, 127, 161), rgb(72, 20, 44));
+  --mm-banner-background: url("../assets/backgrounds/monolith-hero-banner.png");
+  --mm-assessment1-font: "Nunito Sans", sans-serif;
+  --mm-assessment1-main-color: rgb(255, 255, 255);
+  --mm-assessment1-secondary-color: rgba(255,90,95,1.0);
+  --mm-site-width: calc(100% - 5vw);
+  --mm-assessment2-font1: "Roboto", sans-serif;
+  --mm-assessment2-font2: "Roboto", sans-serif;
+  --mm-assessment2-main-color: rgb(26, 37, 56);
+  --mm-assessment2-secondary-color: rgb(242, 107, 44);
+  --mm-site-width: calc(100% - 5vw);
+}
+
+.assessment_1 .main-holder {
+  position: relative;
+  padding: 5rem 9.5vw;
+}
+.assessment_1 .main-holder::before {
+  content: "";
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  background: var(--mm-banner-background);
+  background-size: cover;
+  background-position: center center;
+  filter: brightness(0.4);
+  z-index: -1;
+}
+.assessment_1 .main-holder .text-holder {
+  max-width: 550px;
+  font-family: var(--mm-assessment1-font);
+  z-index: 2;
+}
+.assessment_1 .main-holder .text-holder h1, .assessment_1 .main-holder .text-holder p {
+  color: var(--mm-assessment1-main-color);
+  font-weight: 400;
+}
+.assessment_1 .main-holder .text-holder h1 {
+  font-size: 54px;
+  letter-spacing: -0.25px;
+}
+.assessment_1 .main-holder .text-holder p, .assessment_1 .main-holder .text-holder button {
+  font-size: 16px;
+}
+.assessment_1 .main-holder .text-holder h6 {
+  color: var(--mm-assessment1-secondary-color);
+  font-weight: 700;
+}
+.assessment_1 .main-holder .text-holder h6 {
+  font-size: 18px;
+}
+.assessment_1 .main-holder .text-holder .btn-group .btn {
+  border-color: var(--mm-assessment1-secondary-color);
+  color: var(--mm-assessment1-main-color);
+  border-radius: 25px;
+  font-weight: 700;
+  min-width: 180px;
+  line-height: 50px;
+  margin: 10px 25px 30px 0;
+  padding: 0 15px;
+  max-width: 250px;
+}
+.assessment_1 .main-holder .text-holder .btn-group .btn:nth-of-type(1) {
+  background-color: var(--mm-assessment1-secondary-color);
+  color: var(--mm-assessment1-main-color);
+}
+.assessment_1 .main-holder .text-holder .btn-group .btn:nth-of-type(1):hover {
+  background-color: rgb(204, 77, 89);
+  border-color: rgb(204, 77, 89);
+}
+.assessment_1 .main-holder .text-holder .btn-group .btn:nth-of-type(2) {
+  border-color: var(--mm-assessment1-secondary-color);
+  background-color: transparent;
+  margin-right: 0;
+}
+.assessment_1 .main-holder .text-holder .btn-group .btn:nth-of-type(2):hover {
+  background-color: var(--mm-assessment1-secondary-color);
+}
+@media screen and (min-width: 992px) {
+  .assessment_1 .main-holder .text-holder .btn-group .btn {
+    margin: 2vw 25px 5vw 0;
+  }
+}
+@media screen and (min-width: 992px) {
+  .assessment_1 .main-holder .text-holder {
+    max-width: 600px;
+  }
+}
+.assessment_1 .main-holder .logo-slider {
+  position: relative;
+  overflow: hidden;
+  height: 100px;
+  max-width: 100%;
+}
+.assessment_1 .main-holder .logo-slider .slider-holder {
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  border-radius: 0;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+  padding: 0 !important;
+  justify-content: flex-start;
+}
+.assessment_1 .main-holder .logo-slider .slider-holder.swiper {
+  width: 100% !important;
+}
+.assessment_1 .main-holder .logo-slider .slider-holder::-webkit-scrollbar {
+  display: none !important;
+}
+.assessment_1 .main-holder .logo-slider .slider-holder.no-transition {
+  scroll-behavior: auto !important;
+}
+.assessment_1 .main-holder .logo-slider .slider-holder.dragging {
+  scroll-snap-type: none !important;
+  scroll-behavior: auto !important;
+}
+.assessment_1 .main-holder .logo-slider .slider-holder.dragging .slide {
+  cursor: grab !important;
+  user-select: none !important;
+}
+.assessment_1 .main-holder .logo-slider .slider-holder:where(.slide) {
+  display: flex !important;
+  justify-content: start !important;
+  align-items: center !important;
+}
+.assessment_1 .main-holder .logo-slider .slider-holder .slide {
+  display: flex !important;
+  flex-direction: column;
+  flex: 0 0 50%;
+}
+.assessment_1 .main-holder .logo-slider .slider-holder .slide img {
+  max-width: 65%;
+  height: auto;
+}
+@media screen and (min-width: 992px) {
+  .assessment_1 .main-holder .logo-slider .slider-holder .slide {
+    flex: 0 0 20%;
+  }
+}
+.assessment_1 .main-holder .logo-slider .arrow-holder {
+  position: absolute;
+  top: 35%;
+  left: 5px;
+  right: 5px;
+  transform: translateY(-50%);
+}
+.assessment_1 .main-holder .logo-slider .arrow-holder .arrow {
+  font-size: 10px;
+  line-height: 18px;
+  border-radius: 50%;
+  border: 1px solid;
+  color: var(--mm-assessment1-secondary-color);
+  cursor: pointer;
+  width: 20px;
+  text-align: center;
+}
+.assessment_1 .main-holder .logo-slider .dot-holder {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.assessment_1 .main-holder .logo-slider .dot-holder .dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: var(--mm-assessment1-secondary-color);
+  margin: 0 4px;
+  cursor: pointer;
+}
+.assessment_1 .main-holder .logo-slider .dot-holder .dot:not(.active) {
+  filter: brightness(0.4);
+}
+@media screen and (min-width: 992px) {
+  .assessment_1 .main-holder .logo-slider {
+    max-width: 1000px;
+  }
+}
+@media screen and (min-width: 992px) {
+  .assessment_1 .main-holder {
+    padding: 5rem 5vw;
+  }
+}
+
+:root {
+  --mm-light: rgb(242, 242, 242);
+  --mm-black: rgb(0, 0, 0);
+  --mm-overlay: rgba(0, 0, 0, 0.4);
+  --mm-lightgray: rgb(204, 204, 204);
+  --mm-darkgray: rgb(151, 151, 151);
+  --mm-maroon: rgb(72, 20, 44);
+  --mm-pink: rgb(215, 127, 161);
+  --mm-gradient-top: linear-gradient(to bottom, rgb(72, 20, 44), rgb(215, 127, 161));
+  --mm-gradient-bottom: linear-gradient(to bottom, rgb(215, 127, 161), rgb(72, 20, 44));
+  --mm-banner-background: url("../assets/backgrounds/monolith-hero-banner.png");
+  --mm-assessment1-font: "Nunito Sans", sans-serif;
+  --mm-assessment1-main-color: rgb(255, 255, 255);
+  --mm-assessment1-secondary-color: rgba(255,90,95,1.0);
+  --mm-site-width: calc(100% - 5vw);
+  --mm-assessment2-font1: "Roboto", sans-serif;
+  --mm-assessment2-font2: "Roboto", sans-serif;
+  --mm-assessment2-main-color: rgb(26, 37, 56);
+  --mm-assessment2-secondary-color: rgb(242, 107, 44);
+  --mm-site-width: calc(100% - 5vw);
+}
+
+.assessment_2 .main-holder {
+  padding: 0 9.5vw;
+  background-color: rgb(243, 246, 250);
+}
+.assessment_2 .main-holder .wrapper {
+  background-color: var(--mm-assessment1-main-color);
+  padding-bottom: 5rem;
+}
+.assessment_2 .main-holder .wrapper h1 {
+  padding-top: 5rem;
+  font-size: 33px;
+  font-family: var(--mm-assessment2-font1);
+  font-weight: 700;
+}
+.assessment_2 .main-holder .wrapper h1, .assessment_2 .main-holder .wrapper .accordion-button, .assessment_2 .main-holder .wrapper p {
+  color: var(--mm-assessment2-main-color);
+}
+.assessment_2 .main-holder .wrapper p {
+  font-family: var(--mm-assessment2-font2);
+  font-size: 16px;
+}
+.assessment_2 .main-holder .wrapper #snapdocsAccordion .accordion-item {
+  border: 0;
+  outline: none;
+}
+.assessment_2 .main-holder .wrapper #snapdocsAccordion .accordion-item .accordion-button {
+  box-shadow: none;
+  font-size: 21px;
+  background-color: transparent;
+  font-family: var(--mm-assessment2-font1);
+  font-weight: 700;
+  line-height: 70px;
+}
+.assessment_2 .main-holder .wrapper #snapdocsAccordion .accordion-item .accordion-button::after {
+  font-size: 16px;
+  color: var(--mm-assessment2-secondary-color);
+  background-image: none;
+  content: "\f107";
+  font-family: "fontAwesome";
+  height: unset;
+}
+.assessment_2 .main-holder .wrapper #snapdocsAccordion .accordion-item .accordion-body .btn-group .btn {
+  font-family: var(--mm-assessment2-font2);
+}
+.assessment_2 .main-holder .wrapper #snapdocsAccordion .accordion-item .accordion-body .btn-group .btn svg {
+  margin-left: 5px;
+  height: 23px;
+  color: var(--mm-assessment2-secondary-color);
+}
+.assessment_2 .main-holder .wrapper #snapdocsAccordion .accordion-item .accordion-body .btn-group .btn:hover {
+  color: var(--mm-assessment2-secondary-color);
+}
+.assessment_2 .main-holder .wrapper #snapdocsAccordion .accordion-item:not(:first-of-type) {
+  border-top: 1px var(--mm-assessment2-main-color) solid;
+}
+
+:root {
+  --mm-light: rgb(242, 242, 242);
+  --mm-black: rgb(0, 0, 0);
+  --mm-overlay: rgba(0, 0, 0, 0.4);
+  --mm-lightgray: rgb(204, 204, 204);
+  --mm-darkgray: rgb(151, 151, 151);
+  --mm-maroon: rgb(72, 20, 44);
+  --mm-pink: rgb(215, 127, 161);
+  --mm-gradient-top: linear-gradient(to bottom, rgb(72, 20, 44), rgb(215, 127, 161));
+  --mm-gradient-bottom: linear-gradient(to bottom, rgb(215, 127, 161), rgb(72, 20, 44));
+  --mm-banner-background: url("../assets/backgrounds/monolith-hero-banner.png");
+  --mm-assessment1-font: "Nunito Sans", sans-serif;
+  --mm-assessment1-main-color: rgb(255, 255, 255);
+  --mm-assessment1-secondary-color: rgba(255,90,95,1.0);
+  --mm-site-width: calc(100% - 5vw);
+  --mm-assessment2-font1: "Roboto", sans-serif;
+  --mm-assessment2-font2: "Roboto", sans-serif;
+  --mm-assessment2-main-color: rgb(26, 37, 56);
+  --mm-assessment2-secondary-color: rgb(242, 107, 44);
+  --mm-site-width: calc(100% - 5vw);
+}
+
+@-webkit-keyframes broke {
+  10% {
+    -webkit-transform: rotate(0);
+  }
+  20%, 60% {
+    -webkit-transform: rotate(-80deg);
+  }
+  40% {
+    -webkit-transform: rotate(-60deg);
+  }
+  80% {
+    -webkit-transform: rotate(-60deg) translateY(0);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: translateY(700px);
+    opacity: 0;
+  }
+}
+@keyframes broke {
+  10% {
+    transform: rotate(0);
+  }
+  20%, 60% {
+    transform: rotate(-80deg);
+  }
+  40% {
+    transform: rotate(-60deg);
+  }
+  80% {
+    transform: rotate(-60deg) translateY(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(400px);
+    opacity: 0;
+  }
+}
+@-webkit-keyframes ouch {
+  0% {
+    margin-bottom: 0;
+    filter: drop-shadow(0 0 var(--mm-black));
+  }
+  25%, 90% {
+    top: 20px;
+    filter: dropShadow(0 18px var(--mm-black));
+  }
+  100% {
+    top: 0;
+    margin-bottom: 0;
+    filter: drop-shadow(0 0 var(--mm-black));
+  }
+}
+@keyframes ouch {
+  0% {
+    margin-bottom: 0;
+    filter: drop-shadow(0 0 var(--mm-black));
+  }
+  25%, 90% {
+    top: 20px;
+    filter: dropShadow(0 18px var(--mm-black));
+  }
+  100% {
+    top: 0;
+    margin-bottom: 0;
+    filter: drop-shadow(0 0 var(--mm-black));
+  }
+}
+@-webkit-keyframes pull {
+  0%, 50%, 100% {
+    -webkit-transform: skewX(0deg);
+  }
+  25%, 75% {
+    -webkit-transform: skewX(5deg);
+  }
+}
+@keyframes pull {
+  0%, 50%, 100% {
+    transform: skewX(0deg);
+  }
+  25%, 75% {
+    transform: skewX(5deg);
+  }
+}
+@-webkit-keyframes house {
+  0%, 100% {
+    -webkit-transform: scale(1);
+    opacity: 1;
+  }
+  40% {
+    opacity: 0;
+  }
+  50% {
+    -webkit-transform: scale(0);
+    opacity: 0;
+  }
+  92% {
+    opacity: 1;
+  }
+}
+@keyframes house {
+  0%, 100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  40% {
+    opacity: 0;
+  }
+  50% {
+    transform: scale(0);
+    opacity: 0;
+  }
+  92% {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes door {
+  0%, 98%, 100% {
+    -webkit-transform: scale(0);
+    opacity: 0;
+  }
+  50% {
+    -webkit-transform: scale(1);
+    opacity: 1;
+  }
+}
+@keyframes door {
+  0%, 98%, 100% {
+    transform: scale(0);
+    opacity: 0;
+  }
+  50% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+.container {
+  margin: 10px auto;
+  max-width: 600px;
+  text-align: center;
+}
+.container h1 {
+  margin: 30px 0;
+  font-size: 4em;
+  line-height: 1;
+  letter-spacing: -1px;
+}
+.container h1 span {
+  position: relative;
+  display: inline-block;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.container h1 span::before, .container h1 span ::after {
+  content: "";
+  position: absolute;
+}
+.container h1 span#left {
+  left: 17.5px;
+  background-image: -webkit-linear-gradient(0deg, var(--mm-black) 3%, var(--mm-black) 76%, transparent 76%);
+  -webkit-animation: broke ease-in-out infinite 6s;
+  animation: broke ease-in-out infinite 6s;
+  animation-delay: 1.5s;
+  animation-fill-mode: both;
+  -webkit-animation-delay: 1.5s;
+  -webkit-animation-fill-mode: both;
+  -webkit-transform-origin: bottom right;
+  transform-origin: bottom right;
+  z-index: -1;
+}
+.container h1 span#right {
+  left: -17.5px;
+  background-image: -webkit-linear-gradient(0deg, transparent 26%, var(--mm-black) 26%, var(--mm-black) 80%);
+}
+.container h3 {
+  font-size: 32px;
+}
+.container h3, .container > p {
+  filter: drop-shadow(0 0 var(--mm-black));
+  position: relative;
+  animation: ouch ease-in-out infinite 6s;
+  animation-delay: 1.795s;
+  animation-fill-mode: both;
+  transform-origin: top center;
+  -webkit-animation: ouch ease-in-out infinite 6s;
+  -webkit-animation-delay: 1.795s;
+  -webkit-animation-fill-mode: both;
+  -webkit-transform-origin: top center;
+}
+
+:root {
+  --mm-light: rgb(242, 242, 242);
+  --mm-black: rgb(0, 0, 0);
+  --mm-overlay: rgba(0, 0, 0, 0.4);
+  --mm-lightgray: rgb(204, 204, 204);
+  --mm-darkgray: rgb(151, 151, 151);
+  --mm-maroon: rgb(72, 20, 44);
+  --mm-pink: rgb(215, 127, 161);
+  --mm-gradient-top: linear-gradient(to bottom, rgb(72, 20, 44), rgb(215, 127, 161));
+  --mm-gradient-bottom: linear-gradient(to bottom, rgb(215, 127, 161), rgb(72, 20, 44));
+  --mm-banner-background: url("../assets/backgrounds/monolith-hero-banner.png");
+  --mm-assessment1-font: "Nunito Sans", sans-serif;
+  --mm-assessment1-main-color: rgb(255, 255, 255);
+  --mm-assessment1-secondary-color: rgba(255,90,95,1.0);
+  --mm-site-width: calc(100% - 5vw);
+  --mm-assessment2-font1: "Roboto", sans-serif;
+  --mm-assessment2-font2: "Roboto", sans-serif;
+  --mm-assessment2-main-color: rgb(26, 37, 56);
+  --mm-assessment2-secondary-color: rgb(242, 107, 44);
+  --mm-site-width: calc(100% - 5vw);
+}
+
+.site-footer {
+  padding: 30px 0;
+  background-image: var(--mm-gradient-bottom);
+  filter: drop-shadow(0 0 5px var(--mm-lightgray));
+}
+.site-footer .container-fluid > a, .site-footer .container-fluid .u-url {
+  font-size: 21px;
+  color: var(--mm-light);
+  filter: drop-shadow(0 0 2.5px var(--mm-black));
+}
+.site-footer .container-fluid .footer-col a {
+  color: var(--mm-light);
+  filter: drop-shadow(0 0 2.5px var(--mm-black));
+}
+.site-footer .container-fluid .footer-col svg {
+  margin-right: 5px;
+  height: 18px;
+}
+.site-footer .container-fluid .footer-col p, .site-footer .container-fluid .footer-col small {
+  color: var(--mm-light);
+  filter: drop-shadow(0 0 2.5px var(--mm-black));
+}
+.site-footer .container-fluid .footer-col:nth-of-type(2) .ms-4 {
+  text-transform: capitalize;
+}
+
+/*# sourceMappingURL=styles.css.map */

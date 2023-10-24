@@ -1,0 +1,10 @@
+@import "variables";
+.assessment-link {
+    text-transform: capitalize;
+    font-weight: 500;
+    color: var(--mm-black);
+    a {
+        color: var(--mm-black);
+        font-weight: normal;
+    }
+}
