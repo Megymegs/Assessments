@@ -4,9 +4,9 @@
 
 {% if page.title == "assessment 1" %}
 <script src="{{'js/initializeSlider.js' | relative_url}}" type="text/javascript"></script>
-{% else if  page.title == "assessment 2" %}
+{% else if  page.title === "assessment 2" %}
 <script src="{{'js/accordionImg.js' | relative_url}}" type="text/javascript"></script>
 {% else if  page.title == "404" %}
-<script src="{{'js/accordionImg.js' | relative_url}}" type="text/javascript"></script>
+<script src="{{'js/index.js' | relative_url}}" type="text/javascript"></script>
 {% else %}
 {% endif %}
