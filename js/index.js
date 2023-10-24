@@ -14,6 +14,7 @@ const manipulateDOM = () => {
     }
   }
 };
+
 window.addEventListener("DOMContentLoaded", () => {
   checkURL();
 });
