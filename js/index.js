@@ -7,7 +7,7 @@ function checkURL(currentPageURL, text) {
   if (currentPageURL.includes(text)) {
     setTimeout(() => {
       console.log(currentPageURL);
-      window.location.href = "/index.html/"
+      window.location.href = "/Assessments/"
       return true;
     }, 6800);
   }
